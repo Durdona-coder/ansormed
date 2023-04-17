@@ -1,0 +1,146 @@
+/* fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
+       url('../fonts/open-sans-v34-latin-700.woff') format('woff');
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted #de2e54;
+  outline-offset: 2px;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #444;
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+}
+
+h1 h2 h3 h4 h5 h6 p ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 24px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-link:active {
+  opacity: 0.6;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #222;
+  transition: color 04s ease;
+}
+
+.logo-text:hover {
+  color: #de2e54;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item:not(:last-of-type) {
+  margin-right: 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  transition: color 04s ease;
+}
+
+.nav-link:hover {
+  color: #de2e54;
+}
+
+.nav-link:active {
+  opacity: 0.6;
+}
+
+.header-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #de2e54;
+  border: 2px solid #de2e54;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: color 04s ease;
+}
+
+.header-link:hover {
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.header-link:active {
+  background-color: #de2e54;
+  color: #fff;
+  opacity: 0.6;
+}
