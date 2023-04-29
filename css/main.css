@@ -1,23 +1,3 @@
-/* fonts */
-@font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
-       url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
-       url('../fonts/open-sans-v34-latin-700.woff') format('woff');
-}
-
-
 * {
   box-sizing: border-box;
 }
@@ -50,9 +30,9 @@ img {
   display: block;
 }
 
-h1 h2 h3 h4 h5 h6 p ul li {
-  padding: 0;
+h1, h2, h3, h4, h5, h6, ul, li, p {
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -120,7 +100,8 @@ h1 h2 h3 h4 h5 h6 p ul li {
   opacity: 0.6;
 }
 
-.header-link {
+.main-link {
+  display: inline-block;
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
@@ -141,6 +122,210 @@ h1 h2 h3 h4 h5 h6 p ul li {
 
 .header-link:active {
   background-color: #de2e54;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.hero-section {
+  background-color: #0eb4c1;
+  padding-top: 30px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  width: 500px;
+  color: #fff;
+}
+
+.hero-heading {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.hero-link:hover {
+  background-color: rgba(222, 46, 84, 0.8);
+}
+
+.hero-link:active {
+  background-color: rgba(222, 46, 84, 0.6);
+}
+
+.services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services-heading {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.services-list {
+  width: 864px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-item:not(:last-of-type) {
+  margin-bottom: 80px;
+}
+
+.service-item-content {
+  width: 600px;
+}
+
+.service-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+}
+
+.service-title {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.services-link {
+  display: flex;
+  justify-content: center;
+}
+
+.services-link a:hover {
+  background-color: #fff;
+  color: #de2e54;
+}
+
+.services-link a:active {
+  background-color: #de2e54;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.contact-section {
+  background-color: #0eb4c1;
+  color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.contact-heading {
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-family: 'Open Sans Condensed';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: color 0.4s ease;
+}
+
+.contact-link:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.red-hover:hover {
+  background: #de2e54;
+  border: 2px solid #de2e54;
+  border-radius: 8px;
+}
+
+.red-hover:active {
+  opacity: 0.6;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #222;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text-footer {
+  color: #fff;
+}
+
+.logo-text-footer:active {
+  color: #fff;
+}
+
+.footer-links-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-link-item:not(:last-of-type) {
+  margin-right: 32px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 04s ease;
+}
+
+.footer-link:hover {
+  color: #de2e54;
+}
+
+.footer-link:active {
   color: #fff;
   opacity: 0.6;
 }
