@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
   margin-right: 40px;
 }
 
-.red-hover:hover {
+.contact-link:hover {
   background: #de2e54;
   border: 2px solid #de2e54;
   border-radius: 8px;
